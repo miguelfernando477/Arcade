@@ -11,7 +11,10 @@
 <body>
     <h1 id="Title">Tic Tac Toe</h1>
     <section id="Players">
-        <button id="One-Player">One Player</button> <button id="Two-Player">Two Player</button>
+        <h2>Player 1 Name : <input id="player1Name"></h2>
+        <h2>Player 2 Name : <input id="player2Name"></h2>
+        <button onclick="displayNames()">Submit</button>
+        <h1 id="displayNames"> </h1>
     </section>
     <section id="Board">
         <div class="Space"></div>
@@ -24,6 +27,7 @@
         <div class="Space"></div>
         <div class="Space"></div>
     </section>
+    <button id=singlePlayer> Single Player</button>
     <button id="Restart">Restart</button>
 </body>
 </html>
