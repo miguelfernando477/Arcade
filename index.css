@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  #Board {
+    width: 360px;
+    height: 360px;
+  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .Space {
+    flex: 0 0 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .Space:nth-child(3n+2) { 
+    border-left: 6px solid black;
+    border-right: 6px solid black;
+  }
+  
+  .Space:nth-child(n+4):nth-child(-n+6) {
+    border-top: 6px solid black;
+    border-bottom: 6px solid black;
+  }
+  
