@@ -33,6 +33,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
+  font-size: 50px;
 }
 
 .Space:nth-child(3n+2) { 

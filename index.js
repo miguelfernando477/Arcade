@@ -11,20 +11,23 @@ function displayNames() {
   }
 }
 
+
 const gameState = {
   players: ['x', 'o'],
-  board: [
-    [null, null, null],
-    [null, null, null],
-    [null, null, null]
-  ]
+  board: [null, null, null , null, null, null, null, null, null]
 }
 
+currentPlayer = gameState.players[0]
+
 function makeMove(evt){
-  evt.target.innerHTML = gameState.players[0]
-  let a = gameState.players[0]
-  gameState.players[0] = gameState.players[1]
-  gameState.players[1] = a
+  const spot = evt.target.id;
+  console.log(spot);
+  if (!gameState.board[spot]){
+    gameState.board[spot] = currentPlayer;
+    evt.target.innerHTML = currentPlayer
+    currentPlayer = currentPlayer === gameState.players[0] ? gameState.players[1] : gameState.players[0]
+  }
+
 }
 
 
