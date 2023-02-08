@@ -3,9 +3,17 @@
 }
 
 body {
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  background-color: rgb(29, 27, 27);
+  font-family: 'Fredoka One', cursive;
+}
+#Players{
+  display: flex;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -16,6 +24,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .Space {
@@ -27,16 +36,34 @@ body {
 }
 
 .Space:nth-child(3n+2) { 
-  border-left: 6px solid black;
-  border-right: 6px solid black;
+  border-left: 6px solid white;
+  border-right: 6px solid white;
 }
 
 .Space:nth-child(n+4):nth-child(-n+6) {
-  border-top: 6px solid black;
-  border-bottom: 6px solid black;
+  border-top: 6px solid white;
+  border-bottom: 6px solid white;
 }
 
 #displayNames{
   text-transform: uppercase;
   text-align: center;
+  font-size: 75px;
+  margin: 20px;
+}
+button{
+  border: none;
+  font-size: xx-large;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+button:hover{
+  background-color: gray;
+}
+
+#whosTurn{
+  margin-top: none;
+  margin-bottom: 50px;
+  font-size: 50px;
 }
