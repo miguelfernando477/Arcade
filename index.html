@@ -15,7 +15,7 @@
     <h1 id="Title">Tic Tac Toe</h1>
     <section id="Players">
         <h2>Player 1 Name : <input id="player1Name"></h2>
-        <h2>Player 2 Name : <input id="player2Name"></h2>
+        <h2 id="player2">Player 2 Name : <input id="player2Name"></h2>
         <button onclick="displayNames()">Start</button>
         <h1 id="displayNames"> </h1>
         <h1 id="whosTurn"></h1>
@@ -32,7 +32,7 @@
         <div class="Space" id="8"></div>
     </section>
     <h2 id="winText"></h2>
-    <button id=singlePlayer> Single Player</button>
+    <button onclick="singlePlayer()" id=singlePlayer> Single Player</button>
     <button onclick="restart()" id="Restart">Restart</button>
 </body>
 </html>
