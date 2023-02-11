@@ -15,8 +15,9 @@
     <h1 id="Title">Tic Tac Toe</h1>
     <section id="Players">
         <h2>Player 1 Name : <input id="player1Name"></h2>
-        <h2 id="player2">Player 2 Name : <input id="player2Name"></h2>
-        <button onclick="displayNames()">Start</button>
+        <div id="player2"><h2>Player 2 Name : <input id="player2Name"></h2></div>
+        <button onclick="displayNames()" id="startTwo">Start</button>
+        <button onclick="displaySingleName()" id="startSingle" style = 'display: none;'>Start</button>
         <h1 id="displayNames"> </h1>
         <h1 id="whosTurn"></h1>
     </section>
