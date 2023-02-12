@@ -143,9 +143,7 @@ function makeSingleMove(evt) {
   }
   setTimeout(() => {
     makeCompMove()
-  }, 1500);
-  
-  console.log(gameState.board);
+  }, 500);
 }
 
 function makeCompMove() {
